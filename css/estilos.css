@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+    line-height: 1.6em;
+}
+/* Estilos del menú  o encangezado */
+.header {
+    background-color: #76499d;
+    position: sticky;
+    top: 0;
+    width: 100%; 
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    z-index: 1000;
+    margin-bottom: 1px;
+    
+}
+h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: normal;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+h1 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+/* Navegación */
+.navigation {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navigation ul li {
+    font-family: 'Lucida Sans', 'Lucida Grande', sans-serif;
+    border-radius: 10px;
+}
+
+.navigation ul li a {
+    color: #f5f5f5;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation ul li a.activo,
+.navigation ul li a:hover {
+    background-color: rgb(253, 246, 36);
+    color: #333;
+    font-size: large;
+}
+/* Menu Hamburguesa */
+.check-menu {
+    display: none;
+}
+
+.label-check {
+    display: none;
+}
+/* Responsive (menú hamburguesa) */
+@media (max-width: 768px) {
+    .label-check {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navigation ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100vw;
+        background-color: #76499d;
+        gap: 0;
+    }
+
+    .navigation ul li a {
+        height: 40px;
+    }
+
+    #check-menu:checked ~ nav ul {
+        display: flex;
+    }
+}
+/* Top imágenes de las diferentes páginas */
+.caja, .caja2, .caja3, .caja4 {
+    width:100%;
+    max-width: 1500px;
+    height: 450px;
+    margin: auto;
+    background-size: cover;
+    background-position:center;
+}
+
+.caja {
+    background-image: url(./../assets/images/caja.png);
+}
+
+.caja2 {
+    background-image: url(./../assets/images/caja2.png);
+}
+.caja3 {
+    background-image: url(./../assets/images/caja3.png);
+}
+.caja4 {
+    background-image: url(./../assets/images/caja4.png);
+}
+
+/* Responsive (cajas delas paginas) */
+@media (max-width: 768px) {
+    .caja, .caja2, .caja3, .caja4 {
+        height: 250px; /* más pequeño en móviles */
+    }
+}
+
+/* Estilos del main y secciones */
+.main {
+    padding: 15px;
+}
+/*estilos del mapa*/
+.wrapper {
+    width: 100%; 
+    max-width: 1550px;
+    margin: auto;
+    overflow: hidden;
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+p {
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 32px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+/*Estilos de la sección "suscripción newletter" */
+.container-sub {
+    margin:0 auto;
+    box-sizing: border-box;
+    max-width: 1500px;
+    padding: 15px;
+    border:none;
+    box-shadow:5px 5px 5px #acacac;
+    height: auto;
+    background-color:#4ba7a8;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.conten-sub {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.conten-sub h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.conten-sub h3{
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.conten-sub p {
+    font-size: 17px;
+    margin-bottom: 25px;
+    max-width: 500px;
+    text-align: center;
+}
+.conten-sub form {
+    width:100%;
+    max-width: 440px;
+    display: flex;
+    margin: auto;
+}
+.conten-sub form .campo {
+    width: 100%;
+    padding: 15px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px 0px 0px 3px;
+    outline: 0px;
+}
+.conten-sub form .btn-sub {
+    padding: 15px 15px;
+    border: none;
+    font-size: 16px;
+    border-radius: 0px 3px 3px 0px;
+    background: #76499d;
+    color: #fff;
+    outline: 0px;
+}
+.conten-sub form .btn-sub:hover {
+    background:#5a3b7f;
+}
+/* Estilos de Formularios */
+form {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3% 0;
+}
+/*estilos para los elementos del container*/
+.container *{
+    box-sizing: border-box;
+}
+/* estilos de las listas */
+.flex-outer,.flex-inner {
+    list-style: none;
+    padding: 0;
+}
+.flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.flex-outer li,.flex-inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.flex-inner{
+    padding: 0 8px;
+    justify-content: space-between;
+}
+.flex-outer > li:not(:last-child){
+    margin-bottom: 20px;
+}
+.flex-outer li label, .flex-outer li p{
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.flex-outer > li >label, .flex-outer li p{
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+.flex-outer > li > label + *, .flex-inner{
+    flex: 1 0 220px;
+}
+.flex-outer li p{
+    margin: 0;
+}
+.flex-outer li input:not([type="radio"]), .flex-outer li textarea {
+    padding: 15px;
+    border: none;
+}
+.flex-outer .liButtons button{
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background-color: #76499d;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    border-radius: 2px;
+}
+.flex-outer .liButtons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/* Estilos de la Tabla de precios */
+#tabla-precios {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Columnas de la tabla de precios */
+.precio-col {
+    display: inline-block;
+    background-color: #f5f5f5;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+    .precio-col {
+        width: 30%;
+        justify-content: space-between;
+        margin-right: 2%;
+    }
+
+    .precio-col:last-child {
+        margin-right: 0;
+    }
+}
+/* Headers de la tabla de precios */
+.precio-col-header {
+    background-color: #4ba7a8;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.precio-col:nth-child(2) .precio-col-header {
+    background-color: #76499d;
+}
+
+.precio-col-header h3 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.precio-col-header p {
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* Características de la tabla de precios */
+.precio-col-caracteristicas {
+    padding: 0 20px 20px 20px;
+    margin: 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.precio-col-caracteristicas p {
+    padding: 20px 0;
+    margin: 0;
+    border-top: 1px solid #ddd;
+    font-size: 15px;
+}
+
+/* Botón de comprar */
+.precio-col-comprar {
+    padding: 10px;
+    max-width: 250px;
+    text-align: center;
+    background-color:#76499d;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    border: 1px solid #76499d;
+}
+
+.precio-col-comprar a {
+    color: #f5f5f5;
+    padding: 10px;
+    font-size: 15px;
+    text-transform:uppercase;
+    text-decoration: none;
+    font-weight: bold                  ;
+}
+
+.precio-col-comprar:hover {
+    background-color: rgb(253, 246, 36);
+    transition: all 0.3s;
+    border: 1px solid rgb(253, 246, 36);
+}
+
+.precio-col-comprar:hover a {
+    color: #333;
+}
+
+/* Pie de página */
+.pie-pagina {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding-top: 1%;
+}
+
+/* Grupo 1 (logo, sobre nosotros, redes sociales) */
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 50px;
+    padding: 45px 0;
+}
+
+/* Caja de contenido */
+.pie-pagina .grupo-1 .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Centrado de la imagen del logo */
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+/* Estilo para los títulos (h2) */
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+/* Estilo para los párrafos (p) */
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los enlaces de redes sociales */
+.pie-pagina .grupo-1 .red-social {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.pie-pagina .grupo-1 .red-social img {
+    width: 45px;
+    height: 45px;
+}
+
+/* Grupo 2 (Aviso legal y derechos reservados) */
+.pie-pagina .grupo-2 {
+    background-color: #76499d;
+    padding: 5px 5px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Estilo para el pequeño texto (copyright) */
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+/* Estilo para los enlaces en el pie de página */
+.pie-pagina .grupo-2 a {
+    font-size: 15px;
+    color: goldenrod;
+    text-decoration: none;
+}
+
+/* Ajustes para responsividad, Cambiar a una columna en pantallas pequeñas y ajustes de fuentes */
+@media (max-width: 768px) {
+    .pie-pagina .grupo-1 {
+        grid-template-columns: 1fr; 
+        padding: 20px 0;
+    }
+
+    .pie-pagina .grupo-1 .box h2 {
+        font-size: 18px; 
+    }
+
+    .pie-pagina .grupo-2 small, .pie-pagina .grupo-2 a {
+        font-size: 14px;
+    }
+}

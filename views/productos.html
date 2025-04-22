@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Nutrición & Yoga</title>
+    <!--Favicon-->
+    <link rel="icon" href="../favicon.png">
+    <!--CSS -->
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <!--Cabecera-->
+    <header class="header">
+        <h1><mark>Nutrición</mark> & Yoga</h1>
+
+        <!-- Input checkbox oculto para el menú hamburguesa -->
+        <input type="checkbox" id="check-menu" class="check-menu">
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="#" class="activo"> PRODUCTOS</a></li>
+                <li><a href="./presupuesto.html">PRESUPUESTO</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+            <!-- icono del menú hamburguesa -->
+            <label for="check-menu" class="label-check">
+                <img src="../assets/menu-svgrepo-com.svg" alt="Menú hamburguesa" class="menu-hamburguesa" width="60" height="60">
+            </label>
+        </nav>
+    </header>
+    <div class="caja2"></div><br>
+
+    <!-- capa principal -->
+    <main class="main">
+        <h2>Nutrición & Yoga te ofrece</h2><br>
+
+        <!-- Contenedor principal de todos los planes-->
+        <div id="tabla-precios">
+            
+            <!--Plan Básico-->
+            <div class="precio-col">
+                <!--Encabezado del plan Precio/descripción-->
+                <div class="precio-col-header">
+                    <h3>9,99 $ / Mes</h3>
+                    <p>Plan Básico - Ideal para principiantes</p>
+                </div>
+                <!-- Caracteristicas del plan básico-->
+                <div class="precio-col-caracteristicas">
+                    <p>Acceso a contenido exclusivo</p>
+                    <p>3 clases en vivo al mes</p>
+                    <p>Material descargable (PDF)</p>
+                    <p>Soporte por Email</p>
+                </div> 
+                
+                <!--Boton para comrar el plan-->
+                <div class="precio-col-comprar"><a href="#">Comprar</a></div>
+            </div> 
+            
+             <!--Plan Intermedio, todo igual que el plan básico-->
+            <div class="precio-col">
+                <div class="precio-col-header">
+                    <h3><mark>19,99 $ </mark>/ Mes</h3>
+                    <p>Plan Intermedio - Perfecto para más</p>
+                </div>
+                <div class="precio-col-caracteristicas">
+                    <p>Todo lo del Plan Básico</p>
+                    <p>6 clases en vivo al mes</p>
+                    <p>Rutinas personalizadas</p>
+                    <p>Chat de soporte 24/7</p>
+                </div>
+                <div class="precio-col-comprar"><a href="#">Comprar</a></div>
+            </div>
+            
+            <!--Plan Premium, todo igual que el plan básco e intermedio-->
+            <div class="precio-col">
+                <div class="precio-col-header">
+                    <h3>29,99 $ / Mes</h3>
+                    <p>Plan Premium - La experiencia completa</p>
+                </div>
+                <div class="precio-col-caracteristicas">
+                    <p>Todo lo del Plan Intermedio</p>
+                    <p>10 clases en vivo al mes</p>
+                    <p>Asesoría 1:1 con expertos</p>
+                    <p>Acceso a una comunidad privada</p>
+                </div>
+                <div class="precio-col-comprar"><a href="#">Comprar</a></div>
+            </div>
+        </div>
+    </main>
+
+    <!--Pie de pagina, contiene los logotipos de varias redes sociales que redirijen a ellas, la dirección de la empresa y un logo y el aviso legal-->
+    <footer>
+        <div class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="../assets/images/jenpic.png" alt="logo de jen">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>Datos de contacto</h2>
+                    <p>Dirección: 595 W Church St, Orlando, FL 32805, Estados Unidos.</p>
+                    <p>Teléfono: 001-987-4589</p>
+                    <p>Email: nutriyogatips@gmail.com</p>
+                </div>
+                <div class="box">
+                    <h2>Síguenos</h2>
+                    <div class="red-social">
+                        <a href="https://www.facebook.com/nutriyogatips">
+                            <img src="../assets/images/fb.png" alt="Facebook" width="48" height="48">
+                        </a>
+                        <a href="https://www.linkedin.com">
+                            <img src="../assets/images/link.png" alt="linkedin"  width="48" height="48">
+                        </a>
+                        <a href="https://www.instagram.com/nutriyogatips/">
+                            <img src="../assets/images/Insta.png" alt="Instagram"  width="48" height="48">
+                        </a>
+                        <a href="#">
+                            <img src="../assets/images/x.png" alt="x"  width="48" height="48">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <div class="box">
+                    <small>&copy; 2025 <b>Nutri-Yoga SL</b> - Todos los derechos reservados </small>
+                    <a href="#"> Aviso Legal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

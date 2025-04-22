@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Indica que el idioma principal del documento es español -->
+<head>
+    <!-- Define el conjunto de caracteres como UTF-8, compatible con la mayoría de idiomas-->
+    <meta charset="UTF-8">
+    <!-- Hace que el sitio sea responsive, adaptándose a distintos tamaños de pantalla -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Nutrición & Yoga</title>
+     <!-- Descripción del sitio para buscadores -->
+    <meta name="description" content="Transforma tu vida con nutrición consciente y yoga, ayudándote a lograr tu bienestar integral.">
+    <!--Favicon del sitio-->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+     <!--Cabecera con titulo y menú de navegación -->
+    <header class="header">
+        <h1><mark>Nutrición</mark> & Yoga</h1>
+
+        <!-- Input checkbox oculto para el menú hamburguesa -->
+        <input type="checkbox" id="check-menu" class="check-menu">
+
+        <!-- Menú de navegación principal -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="#" class="activo">INICIO</a></li>
+                <li><a href="./views/productos.html">PRODUCTOS</a></li>
+                <li><a href="./views/presupuesto.html">PRESUPUESTO</a></li>
+                <li><a href="./views/contacto.html">CONTACTO</a></li>
+            </ul>
+            <!-- icono del menú hamburguesa -->
+            <label for="check-menu" class="label-check">
+                <img src="assets/menu-svgrepo-com.svg" alt="Menú hamburguesa" class="menu-hamburguesa" width="60" height="60">
+            </label>
+        </nav>
+    </header>
+    <div class="caja"> </div>
+    <!-- Imagen y contenido principal de la página con 3 secciones diferentes -->
+    <main class="main">
+        <!-- Texto de bienvenida y descripción de la empresa y descripción de los servicios, etc. -->
+        <section class="section1 wrapper">
+            <h2>BIENVENIDOS</h2>
+            <p>
+                En Nutrición & Yoga, creemos en el poder transformador de la armonía entre el cuerpo y la mente.
+                Somos una empresa dedicada a guiarte hacia un estilo de vida saludable a través de la nutrición
+                consciente
+                y la práctica de yoga. Nuestro objetivo es ayudarte a encontrar tu equilibrio personal, promoviendo
+                bienestar integral
+                y una conexión profunda con tu cuerpo.<br>
+            </p><br>
+        </section>
+        <section class="section2 wrapper">
+            <h2>NUESTROS SERVICIOS</h2>
+            <p>
+                Consultas de Nutrición: Planes alimenticios personalizados que se adaptan a tus necesidades y objetivos
+                de salud, ayudándote a alcanzar tu mejor versión.
+                Clases de Yoga: Desde principiantes hasta avanzados, nuestras clases te ayudarán a encontrar paz
+                interior, flexibilidad y fortaleza física.
+                Programas Integrales de Bienestar: Combinamos la nutrición y el yoga en programas diseñados para desintoxicar tu cuerpo, reducir el estrés y mejorar tu calidad de vida.<br>
+            </p><br>
+        </section>
+        <section class="section3 wrapper">
+            <h2>ÚNETE A NOSOTROS</h2>
+            <p>
+                Te invitamos a formar parte de nuestra comunidad, donde cada día es una oportunidad para crecer y
+                encontrar el equilibrio perfecto. En Nutrición & Yoga, estamos para apoyarte en tu camino hacia una
+                vida más saludable y feliz. ¡Bienvenidos a tu nueva vida!<br>
+            </p><br>
+        </section>
+        <!-- Conteniner para suscribirse y recibir newsletter exporadicamnete-->
+        <div class="container-sub">
+            <div class="conten-sub"><br>
+                <h2>Suscríbete a nuestro Newsletter</h2>
+                <h3>¡Solo recetas y tips saludables!</h3>
+                <p>Sin promesas de spam.</p>
+                <form action="#">
+                    <input type="email" class="campo" placeholder="Introduce tu correo electrónico" required>
+                    <input type="submit" value="Suscribirse" class="btn-sub">
+                </form>
+            </div>
+        </div>
+    </main>
+    <!--pie de pagina, contiene los logotipos de varias redes sociales que redirijen a ellas, la dirección de la empresa, un logo y el aviso legal-->
+    <footer>
+        <div class="pie-pagina">
+            <div class="grupo-1">
+                <!-- Logo de la empresa -->
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="./assets/images/jenpic.png" alt="logo de jen">
+                        </a>
+                    </figure>
+                </div>
+                <!-- Información de contacto -->
+                <div class="box">
+                    <h2>Datos de contacto</h2>
+                    <p>Dirección: 595 W Church St, Orlando,</p>
+                    <p>FL 32805, Estados Unidos.</p>
+                    <p>Teléfono: 001-987-4589</p>
+                    <p>Email: nutriyogatips@gmail.com</p>
+                </div>
+                <!-- Enlaces a redes sociales -->
+                <div class="box">
+                    <h2>Síguenos</h2>
+                    <div class="red-social">
+                        <a href="https://www.facebook.com/nutriyogatips">
+                            <img src="./assets/images/fb.png" alt="Facebook"  width="48" height="48">
+                        </a>
+                        <a href="https://www.linkedin.com">
+                            <img src="./assets/images/link.png" alt="linkedin" width="48" height="48">
+                        </a>
+                        <a href="https://www.instagram.com/nutriyogatips/">
+                            <img src="./assets/images/Insta.png" alt="Instagram" width="48" height="48">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/x.png" alt="x" width="48" height="48">
+                        </a>
+                    </div>
+                </div>
+            </div>
+             <!-- Aviso legal y derechos -->
+            <div class="grupo-2">
+                <div class="box">
+                    <small>&copy; 2025 <b>Nutri-Yoga SL</b> - Todos los derechos reservados </small>
+                    <a href="#"> Aviso Legal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+    
+</html>
